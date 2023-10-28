@@ -101,30 +101,6 @@ def provide_decision_support(home_stats, away_stats, home_team, away_team):
 
     return home_scoring_mean, home_allowed_mean, away_scoring_mean, away_allowed_mean
 
-def provide_automated_decision(
-    home_scoring_mean,
-    home_allowed_mean,
-    away_scoring_mean,
-    away_allowed_mean,
-    home_team,
-    away_team,
-):
-    with st.expander("Prediction"):
-        home_pred = (home_scoring_mean + away_allowed_mean) / 2
-        away_pred = (away_scoring_mean + home_allowed_mean) / 2
-
-        spread_pred = home_pred - away_pred
-
-        if spread_pred > 0:
-            winner = home_team
-            spread_pred *= -1
-
-        else:
-            winner = away_team
-            spread_pred = spread_pred
-
-        st.success(f"{winner} wins with a handicap of {spread_pred} points.")
-
 
 def main():
     st.title("NFL-Predictor")
@@ -147,16 +123,6 @@ def main():
         away_scoring_mean,
         away_allowed_mean,
     ) = provide_decision_support(home_stats, away_stats, home_team, away_team)
-
-    # Level 5
-    provide_automated_decision(
-        home_scoring_mean,
-        home_allowed_mean,
-        away_scoring_mean,
-        away_allowed_mean,
-        home_team,
-        away_team,
-    )
 
     return
 
