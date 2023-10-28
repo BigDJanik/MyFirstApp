@@ -3,29 +3,43 @@ import json
 import pandas as pd
 
 
-def provide_raw_data(data: dict) -> None:
+def provide_raw_data(path):
+    with open(file=path, mode="r") as raw_file:
+        raw_data = json.load(raw_file)
+
+    raw_data_df = pd.DataFrame(raw_data["games"])
+
+    home_team = st.selectbox(label="Home Team", options=raw_data["teams"], index=0)
+    away_team = st.selectbox(label="Away Team", options=raw_data["teams"], index=1)
+
     with st.expander(label="Raw Data"):
-        st.json(data)
+        st.json(raw_data)
 
-    return
+    return raw_data_df, home_team, away_team
 
-def provide_derived_data(df: pd.DataFrame) -> None:
+def provide_derived_data(raw_data_df):
     with st.expander(label="Insights"):
         st.subheader("Home Insights")
-        home_stats = df.groupby("team")[["points_scored", "points_allowed"]].mean()
+        home_stats = raw_data_df.groupby("team")[
+            ["points_scored", "points_allowed"]
+        ].mean()
         home_stats["team"] = home_stats.index
+        home_stats.sort_values("points_scored", ascending=False, inplace=True)
         home_stats.reset_index(drop=True, inplace=True)
         home_stats.index += 1
-        home_stats.sort_values("points_scored", ascending=False, inplace=True)
         st.write(home_stats)
 
         st.subheader("Away Insights")
-        away_stats = df.groupby("opponent")[["points_scored", "points_allowed"]].mean()
+        away_stats = raw_data_df.groupby("opponent")[
+            ["points_scored", "points_allowed"]
+        ].mean()
         away_stats["team"] = away_stats.index
+        away_stats.sort_values("points_scored", ascending=False, inplace=True)
         away_stats.reset_index(drop=True, inplace=True)
         away_stats.index += 1
-        away_stats.sort_values("points_scored", ascending=False, inplace=True)
         st.write(away_stats)
+
+    return home_stats, away_stats
 
 def provide_algorithm(raw_data_df):
     with st.expander("Algorithm for Home Advantage"):
@@ -58,29 +72,61 @@ def provide_algorithm(raw_data_df):
         st.write(prepared_data_df)
     return
 
+def provide_decision_support(home_stats, away_stats, home_team, away_team):
+    with st.expander("Metrics for Decision"):
+        first_col, second_col = st.columns(2)
+        home_scoring_rank = home_stats[home_stats.team == home_team].index[0]
+        home_scoring_mean = home_stats[home_stats["team"] == home_team][
+            "points_scored"
+        ].values[0]
+        first_col.metric(label="Home Scoring Mean", value=home_scoring_mean)
+
+        away_scoring_rank = away_stats[away_stats.team == away_team].index[0]
+        away_scoring_mean = away_stats[away_stats["team"] == away_team][
+            "points_scored"
+        ].values[0]
+        second_col.metric(label="Away Scoring Mean", value=away_scoring_mean)
+
+        home_allowed_rank = home_stats[home_stats.team == home_team].index[0]
+        home_allowed_mean = home_stats[home_stats["team"] == home_team][
+            "points_allowed"
+        ].values[0]
+        first_col.metric(label="Home Allowed Mean", value=home_allowed_mean)
+
+        away_allowed_rank = away_stats[away_stats.team == away_team].index[0]
+        away_allowed_mean = away_stats[away_stats["team"] == away_team][
+            "points_allowed"
+        ].values[0]
+        second_col.metric(label="Away Allowed Mean", value=away_allowed_mean)
+
+    return home_scoring_mean, home_allowed_mean, away_scoring_mean, away_allowed_mean
+
 
 
 def main():
     st.title("NFL-Predictor")
 
-    with open("data/nfl_data.json", mode="r") as raw_file:
-        raw_data = json.load(raw_file)
+    path = "data/nfl_data.json"
 
-        raw_data_df = pd.DataFrame(raw_data["games"])
+    # Level 1
+    raw_data_df, home_team, away_team = provide_raw_data(path = path)
 
-        st.selectbox(label="Home Team", options=raw_data["teams"], index = 0)
-        st.selectbox(label="Away Team", options=raw_data["teams"], index = 1)
+    # Level 2
+    home_stats, away_stats = provide_derived_data(raw_data_df=raw_data_df)
 
-        # Level 1
-        provide_raw_data(data = raw_data)
+    # Level 3
+    provide_algorithm(raw_data_df=raw_data_df)
 
-        # Level 2
-        provide_derived_data(df= raw_data_df)
+    # Level 4
+    (
+        home_scoring_mean,
+        home_allowed_mean,
+        away_scoring_mean,
+        away_allowed_mean,
+    ) = provide_decision_support(home_stats, away_stats, home_team, away_team)
 
-        # Level 3
-        provide_algorithm(raw_data_df=raw_data_df)
 
-        return
+    return
 
 if __name__ == "__main__":
     main()
