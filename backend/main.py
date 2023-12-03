@@ -103,3 +103,21 @@ async def get_scoring_means(home_team, away_team):
     scoring_means["away_allowed_mean"] = away_allowed_mean
     
     return scoring_means
+
+@app.get("/level-5/prediction")
+async def predict(home_team, away_team):
+    scoring_means = await get_scoring_means(home_team=home_team, away_team=away_team)
+    home_pred = (scoring_means["home_scoring_mean"] + scoring_means["away_allowed_mean"]) / 2
+    away_pred = (scoring_means["away_scoring_mean"] + scoring_means["home_allowed_mean"]) / 2
+
+    spread_pred = home_pred - away_pred
+
+    if spread_pred > 0:
+        winner = home_team
+        spread_pred *= -1
+
+    else:
+        winner = away_team
+        spread_pred = spread_pred
+    
+    return {"winner": winner, "spread_pred": spread_pred}
