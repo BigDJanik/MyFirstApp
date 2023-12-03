@@ -75,12 +75,13 @@ def provide_automated_decision(
     home_team,
     away_team,
 ):
+
     response = requests.get(ENDPOINT_PREDICTION, params=({"home_team": home_team, "away_team": away_team}))
     response = response.json()
-    
+   
     winner = response["winner"]
     spread_pred = response["spread_pred"]
-    
+
     with st.expander("Prediction"):
 
         st.success(f"{winner} wins with a handicap of {spread_pred} points.")
@@ -109,6 +110,7 @@ def main():
     provide_decision_support(home_team, away_team)
 
     # Level 5
+
     provide_automated_decision(
         home_team,
         away_team,
