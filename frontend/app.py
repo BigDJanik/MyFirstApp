@@ -13,6 +13,7 @@ ENDPOINT_TEAMS = URL + "/level-1/teams"
 ENDPOINT_STATS = URL + "/level-2/stats"
 ENDPOINT_WINS = URL + "/level-3/wins"
 ENDPOINT_INFO = URL + "/level-3/info_notes"
+ENDPOINT_SCORING = URL + "/level-4/scoring"
 
 
 def provide_raw_data():
@@ -55,34 +56,19 @@ def provide_algorithm():
         st.write(prepared_data)
     return
 
-def provide_decision_support(home_stats, away_stats, home_team, away_team):
+def provide_decision_support(home_team, away_team):
+    
+    response = requests.get(ENDPOINT_SCORING, params=({"home_team": home_team, "away_team": away_team}))
+    scoring_means = response.json()
+    
     with st.expander("Metrics for Decision"):
         first_col, second_col = st.columns(2)
-        home_scoring_rank = home_stats[home_stats.team == home_team].index[0]
-        home_scoring_mean = home_stats[home_stats["team"] == home_team][
-            "points_scored"
-        ].values[0]
-        first_col.metric(label="Home Scoring Mean", value=home_scoring_mean)
 
-        away_scoring_rank = away_stats[away_stats.team == away_team].index[0]
-        away_scoring_mean = away_stats[away_stats["team"] == away_team][
-            "points_scored"
-        ].values[0]
-        second_col.metric(label="Away Scoring Mean", value=away_scoring_mean)
-
-        home_allowed_rank = home_stats[home_stats.team == home_team].index[0]
-        home_allowed_mean = home_stats[home_stats["team"] == home_team][
-            "points_allowed"
-        ].values[0]
-        first_col.metric(label="Home Allowed Mean", value=home_allowed_mean)
-
-        away_allowed_rank = away_stats[away_stats.team == away_team].index[0]
-        away_allowed_mean = away_stats[away_stats["team"] == away_team][
-            "points_allowed"
-        ].values[0]
-        second_col.metric(label="Away Allowed Mean", value=away_allowed_mean)
-
-    return home_scoring_mean, home_allowed_mean, away_scoring_mean, away_allowed_mean
+        first_col.metric(label="Home scoring mean", value=scoring_means["home_scoring_mean"])
+        second_col.metric(label="Away scoring mean", value=scoring_means["away_scoring_mean"])
+        first_col.metric(label="Home allowed mean", value=scoring_means["home_allowed_mean"])
+        second_col.metric(label="Away allowed mean", value=scoring_means["away_allowed_mean"])
+    return
 
 def provide_automated_decision(
     home_scoring_mean,
@@ -126,13 +112,8 @@ def main():
     # Level 3
     provide_algorithm()
 
-    # # Level 4
-    # (
-    #     home_scoring_mean,
-    #     home_allowed_mean,
-    #     away_scoring_mean,
-    #     away_allowed_mean,
-    # ) = provide_decision_support(home_stats, away_stats, home_team, away_team)
+    # Level 4
+    provide_decision_support(home_team, away_team)
 
     # # Level 5
     # provide_automated_decision(

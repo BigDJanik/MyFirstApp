@@ -2,6 +2,7 @@ from fastapi import FastAPI
 from fastapi.responses import HTMLResponse
 import json
 import pandas as pd
+from io import StringIO
 
 path = "data/nfl_data.json"
 
@@ -68,5 +69,37 @@ async def get_info():
                     - **Erfahrung von Sportanalysten:** Sportexperten und Analysten, die die NFL und andere Sportligen abdecken, bringen ihre Erfahrung und Einsichten in die Schätzung des Heimvorteils ein. Dies kann auf beobachteten Mustern und ihrer Kenntnis der Dynamik von Heim- und Auswärtsspielen basieren.
                     """
 
-
     return HTMLResponse(content=info_notes)
+
+@app.get("/level-4/scoring")
+async def get_scoring_means(home_team, away_team):
+    
+    home_stats = await get_stats(team_type="team")
+    away_stats = await get_stats(team_type="opponent")
+    
+    home_stats = pd.read_json(StringIO(home_stats), orient="index")
+    away_stats = pd.read_json(StringIO(away_stats), orient="index")
+    
+    scoring_means = {}
+    
+    home_scoring_mean = home_stats[home_stats["team"] == home_team][
+            "points_scored"
+        ].values[0]
+    scoring_means["home_scoring_mean"] = home_scoring_mean
+    
+    away_scoring_mean = away_stats[away_stats["opponent"] == away_team][
+            "points_scored"
+        ].values[0]
+    scoring_means["away_scoring_mean"] = away_scoring_mean
+    
+    home_allowed_mean = home_stats[home_stats["team"] == home_team][
+            "points_allowed"
+        ].values[0]
+    scoring_means["home_allowed_mean"] = home_allowed_mean
+    
+    away_allowed_mean = away_stats[away_stats["opponent"] == away_team][
+            "points_allowed"
+        ].values[0]
+    scoring_means["away_allowed_mean"] = away_allowed_mean
+    
+    return scoring_means
