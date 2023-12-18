@@ -1,0 +1,17 @@
+0000000000000000000000000000000000000000 e3d2ac214011a6ba920810de09ed5af594c9b799 Janik <janik@BigDataLab.(none)> 1698225775 +0200	clone: from github.com:BigDJanik/MyFirstApp.git
+e3d2ac214011a6ba920810de09ed5af594c9b799 3f544da205ce02a188a22cc191ead09b1bc6907b janik <76305@hs-aalen.de> 1698227134 +0200	commit: chore: add gitignore
+3f544da205ce02a188a22cc191ead09b1bc6907b f1393fbf36724a0fa1cf7decb9cd76d17af5261a janik <76305@hs-aalen.de> 1698228653 +0200	commit: chore: add gitignore
+f1393fbf36724a0fa1cf7decb9cd76d17af5261a cd4953e3767e23c74ab532fa79abe5ff6eed4f51 janik <76305@hs-aalen.de> 1698242485 +0200	pull --prune: Fast-forward
+cd4953e3767e23c74ab532fa79abe5ff6eed4f51 3cc6581fbcc3cc0426b27913feeed9b99ac8de7b janik <76305@hs-aalen.de> 1698507931 +0200	pull --prune: Fast-forward
+3cc6581fbcc3cc0426b27913feeed9b99ac8de7b 68b5dadae1ea53922ff36c0f44515241f482389f janik <76305@hs-aalen.de> 1698509305 +0200	pull --tags origin main: Fast-forward
+68b5dadae1ea53922ff36c0f44515241f482389f eeea95c259a58a78ca4a60384d7f4232098ad521 janik <76305@hs-aalen.de> 1698510040 +0200	pull --prune: Fast-forward
+eeea95c259a58a78ca4a60384d7f4232098ad521 cb5c8fe2e34a33233d0b920c717fe8f0d902aa86 janik <76305@hs-aalen.de> 1698510218 +0200	commit: feat: automated decision
+cb5c8fe2e34a33233d0b920c717fe8f0d902aa86 0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 janik <76305@hs-aalen.de> 1698510278 +0200	commit: edit: removed automated decision
+0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 79f3e630b91ffea518447db6ba5e765b0accddda janik <76305@hs-aalen.de> 1698510414 +0200	pull --prune: Fast-forward
+79f3e630b91ffea518447db6ba5e765b0accddda d79df1f6e29003db53ee970f7281701cd40716c9 janik <76305@hs-aalen.de> 1700055163 +0100	commit: chore: add requirements info
+d79df1f6e29003db53ee970f7281701cd40716c9 18570d10f80d7295c62f62f466f5f1091563edf4 janik <76305@hs-aalen.de> 1701622958 +0100	pull: Fast-forward
+18570d10f80d7295c62f62f466f5f1091563edf4 7ca4fb181fea3998d9b301cad59d4c99ed5f7076 janik <76305@hs-aalen.de> 1701629193 +0100	pull --tags origin main: Fast-forward
+7ca4fb181fea3998d9b301cad59d4c99ed5f7076 7149415183a640dc2b5a48e9bae444c1b1598d74 janik <76305@hs-aalen.de> 1701632009 +0100	pull --tags origin main: Fast-forward
+7149415183a640dc2b5a48e9bae444c1b1598d74 cefac28d652e224f2c0ab8c536217eaac961f797 janik <76305@hs-aalen.de> 1701634485 +0100	commit: Code Cleaning
+cefac28d652e224f2c0ab8c536217eaac961f797 e0db64a8acfbddd018a0d8226ae32e3efe76d11d janik <76305@hs-aalen.de> 1701635057 +0100	pull --tags origin main: Fast-forward
+e0db64a8acfbddd018a0d8226ae32e3efe76d11d 75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 janik <76305@hs-aalen.de> 1701713120 +0100	commit: BugFix: Frontend: IP2 Backend changed

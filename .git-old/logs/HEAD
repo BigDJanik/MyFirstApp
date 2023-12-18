@@ -1,0 +1,75 @@
+0000000000000000000000000000000000000000 e3d2ac214011a6ba920810de09ed5af594c9b799 Janik <janik@BigDataLab.(none)> 1698225775 +0200	clone: from github.com:BigDJanik/MyFirstApp.git
+e3d2ac214011a6ba920810de09ed5af594c9b799 3f544da205ce02a188a22cc191ead09b1bc6907b janik <76305@hs-aalen.de> 1698227134 +0200	commit: chore: add gitignore
+3f544da205ce02a188a22cc191ead09b1bc6907b f1393fbf36724a0fa1cf7decb9cd76d17af5261a janik <76305@hs-aalen.de> 1698228653 +0200	commit: chore: add gitignore
+f1393fbf36724a0fa1cf7decb9cd76d17af5261a f1393fbf36724a0fa1cf7decb9cd76d17af5261a janik <76305@hs-aalen.de> 1698237040 +0200	checkout: moving from main to 1-initialize-web-app
+f1393fbf36724a0fa1cf7decb9cd76d17af5261a f1393fbf36724a0fa1cf7decb9cd76d17af5261a janik <76305@hs-aalen.de> 1698237237 +0200	checkout: moving from 1-initialize-web-app to 1-initialize-web-app
+f1393fbf36724a0fa1cf7decb9cd76d17af5261a 7e5261200afa52525750020c0a425112275afa34 janik <76305@hs-aalen.de> 1698241271 +0200	commit: feature: upload example data
+7e5261200afa52525750020c0a425112275afa34 a4c78a7a30afd2e4d31b70fd20be5e8c4ca47794 janik <76305@hs-aalen.de> 1698241283 +0200	commit: feature: create initial WebApp
+a4c78a7a30afd2e4d31b70fd20be5e8c4ca47794 f1393fbf36724a0fa1cf7decb9cd76d17af5261a janik <76305@hs-aalen.de> 1698242167 +0200	checkout: moving from 1-initialize-web-app to main
+f1393fbf36724a0fa1cf7decb9cd76d17af5261a a4c78a7a30afd2e4d31b70fd20be5e8c4ca47794 janik <76305@hs-aalen.de> 1698242211 +0200	checkout: moving from main to 1-initialize-web-app
+a4c78a7a30afd2e4d31b70fd20be5e8c4ca47794 f1393fbf36724a0fa1cf7decb9cd76d17af5261a janik <76305@hs-aalen.de> 1698242378 +0200	checkout: moving from 1-initialize-web-app to main
+f1393fbf36724a0fa1cf7decb9cd76d17af5261a cd4953e3767e23c74ab532fa79abe5ff6eed4f51 janik <76305@hs-aalen.de> 1698242485 +0200	pull --prune: Fast-forward
+cd4953e3767e23c74ab532fa79abe5ff6eed4f51 cd4953e3767e23c74ab532fa79abe5ff6eed4f51 janik <76305@hs-aalen.de> 1698506092 +0200	checkout: moving from main to 2-develop-data-product-lvl-12
+cd4953e3767e23c74ab532fa79abe5ff6eed4f51 33bd2fd08e035ad6823db12e69ea882abea863e4 janik <76305@hs-aalen.de> 1698506630 +0200	commit: feat: add data product level 1
+33bd2fd08e035ad6823db12e69ea882abea863e4 b439586741b8edef9afda9e36f49187294b3700a janik <76305@hs-aalen.de> 1698507658 +0200	commit: feat: add data product Level 2
+b439586741b8edef9afda9e36f49187294b3700a cd4953e3767e23c74ab532fa79abe5ff6eed4f51 janik <76305@hs-aalen.de> 1698507778 +0200	checkout: moving from 2-develop-data-product-lvl-12 to main
+cd4953e3767e23c74ab532fa79abe5ff6eed4f51 cd4953e3767e23c74ab532fa79abe5ff6eed4f51 janik <76305@hs-aalen.de> 1698507915 +0200	checkout: moving from main to main
+cd4953e3767e23c74ab532fa79abe5ff6eed4f51 3cc6581fbcc3cc0426b27913feeed9b99ac8de7b janik <76305@hs-aalen.de> 1698507931 +0200	pull --prune: Fast-forward
+3cc6581fbcc3cc0426b27913feeed9b99ac8de7b 3cc6581fbcc3cc0426b27913feeed9b99ac8de7b janik <76305@hs-aalen.de> 1698508839 +0200	checkout: moving from main to 5-level-3-algorithmus-implementieren
+3cc6581fbcc3cc0426b27913feeed9b99ac8de7b 63a243f01cf89807af0f499b932e0489781cb6e0 janik <76305@hs-aalen.de> 1698509253 +0200	commit: feat: provide_agorithm implemented
+63a243f01cf89807af0f499b932e0489781cb6e0 3cc6581fbcc3cc0426b27913feeed9b99ac8de7b janik <76305@hs-aalen.de> 1698509296 +0200	checkout: moving from 5-level-3-algorithmus-implementieren to main
+3cc6581fbcc3cc0426b27913feeed9b99ac8de7b 68b5dadae1ea53922ff36c0f44515241f482389f janik <76305@hs-aalen.de> 1698509305 +0200	pull --tags origin main: Fast-forward
+68b5dadae1ea53922ff36c0f44515241f482389f 68b5dadae1ea53922ff36c0f44515241f482389f janik <76305@hs-aalen.de> 1698509334 +0200	checkout: moving from main to 6-level-4-entscheidungshilfe-bereitstellen
+68b5dadae1ea53922ff36c0f44515241f482389f 2d4cf45365075fcc59a2e48c7bfa13b85e0b4f7a janik <76305@hs-aalen.de> 1698509848 +0200	commit: feat: Implementation of decision support
+2d4cf45365075fcc59a2e48c7bfa13b85e0b4f7a 68b5dadae1ea53922ff36c0f44515241f482389f janik <76305@hs-aalen.de> 1698509885 +0200	checkout: moving from 6-level-4-entscheidungshilfe-bereitstellen to main
+68b5dadae1ea53922ff36c0f44515241f482389f eeea95c259a58a78ca4a60384d7f4232098ad521 janik <76305@hs-aalen.de> 1698510040 +0200	pull --prune: Fast-forward
+eeea95c259a58a78ca4a60384d7f4232098ad521 cb5c8fe2e34a33233d0b920c717fe8f0d902aa86 janik <76305@hs-aalen.de> 1698510218 +0200	commit: feat: automated decision
+cb5c8fe2e34a33233d0b920c717fe8f0d902aa86 0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 janik <76305@hs-aalen.de> 1698510278 +0200	commit: edit: removed automated decision
+0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 janik <76305@hs-aalen.de> 1698510307 +0200	checkout: moving from main to 7-level-5-automatische-entscheidungen-umsetzen
+0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 c2da288cb2480c9299d49e93fd95872feb69f2d6 janik <76305@hs-aalen.de> 1698510363 +0200	commit: feat: added automated decision
+c2da288cb2480c9299d49e93fd95872feb69f2d6 0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 janik <76305@hs-aalen.de> 1698510399 +0200	checkout: moving from 7-level-5-automatische-entscheidungen-umsetzen to main
+0d8a7c2b0f0c5ce82e60841d30835ecc324d5929 79f3e630b91ffea518447db6ba5e765b0accddda janik <76305@hs-aalen.de> 1698510414 +0200	pull --prune: Fast-forward
+79f3e630b91ffea518447db6ba5e765b0accddda d79df1f6e29003db53ee970f7281701cd40716c9 janik <76305@hs-aalen.de> 1700055163 +0100	commit: chore: add requirements info
+d79df1f6e29003db53ee970f7281701cd40716c9 d79df1f6e29003db53ee970f7281701cd40716c9 janik <76305@hs-aalen.de> 1701607827 +0100	checkout: moving from main to backend-integration
+d79df1f6e29003db53ee970f7281701cd40716c9 c0be517ddbabf8a6c42431b445230acfc9b4a204 janik <76305@hs-aalen.de> 1701607878 +0100	commit: feature: Initial backend for level 1
+c0be517ddbabf8a6c42431b445230acfc9b4a204 075ef062243fe08582a496af77d9786c04c35d8e janik <76305@hs-aalen.de> 1701608444 +0100	commit: feed: add teamselection
+075ef062243fe08582a496af77d9786c04c35d8e c07b5aa6c6ba9b8d654ecdbcebd920899e03b4ce janik <76305@hs-aalen.de> 1701613044 +0100	commit: feature: add level 2 emdpoints
+c07b5aa6c6ba9b8d654ecdbcebd920899e03b4ce 017c5c9002f934e00a7a6c2e399ea52b0566be9b janik <76305@hs-aalen.de> 1701615697 +0100	commit: feature: Backend&Frontend Docker
+017c5c9002f934e00a7a6c2e399ea52b0566be9b d79df1f6e29003db53ee970f7281701cd40716c9 janik <76305@hs-aalen.de> 1701622526 +0100	checkout: moving from backend-integration to main
+d79df1f6e29003db53ee970f7281701cd40716c9 017c5c9002f934e00a7a6c2e399ea52b0566be9b janik <76305@hs-aalen.de> 1701622530 +0100	checkout: moving from main to backend-integration
+017c5c9002f934e00a7a6c2e399ea52b0566be9b d79df1f6e29003db53ee970f7281701cd40716c9 janik <76305@hs-aalen.de> 1701622787 +0100	checkout: moving from backend-integration to main
+d79df1f6e29003db53ee970f7281701cd40716c9 017c5c9002f934e00a7a6c2e399ea52b0566be9b janik <76305@hs-aalen.de> 1701622853 +0100	checkout: moving from main to backend-integration
+017c5c9002f934e00a7a6c2e399ea52b0566be9b d79df1f6e29003db53ee970f7281701cd40716c9 janik <76305@hs-aalen.de> 1701622868 +0100	checkout: moving from backend-integration to main
+d79df1f6e29003db53ee970f7281701cd40716c9 18570d10f80d7295c62f62f466f5f1091563edf4 janik <76305@hs-aalen.de> 1701622958 +0100	pull: Fast-forward
+18570d10f80d7295c62f62f466f5f1091563edf4 18570d10f80d7295c62f62f466f5f1091563edf4 janik <76305@hs-aalen.de> 1701623069 +0100	checkout: moving from main to level-3-api_integration
+18570d10f80d7295c62f62f466f5f1091563edf4 18570d10f80d7295c62f62f466f5f1091563edf4 janik <76305@hs-aalen.de> 1701623854 +0100	checkout: moving from level-3-api_integration to main
+18570d10f80d7295c62f62f466f5f1091563edf4 18570d10f80d7295c62f62f466f5f1091563edf4 janik <76305@hs-aalen.de> 1701623872 +0100	checkout: moving from main to level-3-api_integration
+18570d10f80d7295c62f62f466f5f1091563edf4 8a1e0456bfe8648d8a22349b9cb2f9efdce0f533 janik <76305@hs-aalen.de> 1701629139 +0100	commit: feature: Level 3: Data and info Notes
+8a1e0456bfe8648d8a22349b9cb2f9efdce0f533 18570d10f80d7295c62f62f466f5f1091563edf4 janik <76305@hs-aalen.de> 1701629184 +0100	checkout: moving from level-3-api_integration to main
+18570d10f80d7295c62f62f466f5f1091563edf4 7ca4fb181fea3998d9b301cad59d4c99ed5f7076 janik <76305@hs-aalen.de> 1701629193 +0100	pull --tags origin main: Fast-forward
+7ca4fb181fea3998d9b301cad59d4c99ed5f7076 7ca4fb181fea3998d9b301cad59d4c99ed5f7076 janik <76305@hs-aalen.de> 1701629292 +0100	checkout: moving from main to level-4-front-and-backend
+7ca4fb181fea3998d9b301cad59d4c99ed5f7076 7124d8bec1689e9905c1adf35949bde2c502551c janik <76305@hs-aalen.de> 1701631875 +0100	commit: feature: Level 4 backen integration
+7124d8bec1689e9905c1adf35949bde2c502551c 7ca4fb181fea3998d9b301cad59d4c99ed5f7076 janik <76305@hs-aalen.de> 1701631975 +0100	checkout: moving from level-4-front-and-backend to main
+7ca4fb181fea3998d9b301cad59d4c99ed5f7076 7124d8bec1689e9905c1adf35949bde2c502551c janik <76305@hs-aalen.de> 1701631990 +0100	checkout: moving from main to level-4-front-and-backend
+7124d8bec1689e9905c1adf35949bde2c502551c 7ca4fb181fea3998d9b301cad59d4c99ed5f7076 janik <76305@hs-aalen.de> 1701632003 +0100	checkout: moving from level-4-front-and-backend to main
+7ca4fb181fea3998d9b301cad59d4c99ed5f7076 7149415183a640dc2b5a48e9bae444c1b1598d74 janik <76305@hs-aalen.de> 1701632009 +0100	pull --tags origin main: Fast-forward
+7149415183a640dc2b5a48e9bae444c1b1598d74 7149415183a640dc2b5a48e9bae444c1b1598d74 janik <76305@hs-aalen.de> 1701634456 +0100	checkout: moving from main to level-5-frontend-and-backend-integration
+7149415183a640dc2b5a48e9bae444c1b1598d74 7149415183a640dc2b5a48e9bae444c1b1598d74 janik <76305@hs-aalen.de> 1701634470 +0100	checkout: moving from level-5-frontend-and-backend-integration to main
+7149415183a640dc2b5a48e9bae444c1b1598d74 cefac28d652e224f2c0ab8c536217eaac961f797 janik <76305@hs-aalen.de> 1701634485 +0100	commit: Code Cleaning
+cefac28d652e224f2c0ab8c536217eaac961f797 7149415183a640dc2b5a48e9bae444c1b1598d74 janik <76305@hs-aalen.de> 1701634544 +0100	checkout: moving from main to level-5-frontend-and-backend-integration
+7149415183a640dc2b5a48e9bae444c1b1598d74 04ffd6d280d9b8f8412fe245772f0ace2dabd0e8 janik <76305@hs-aalen.de> 1701634755 +0100	commit: feature: prediciton in backend
+04ffd6d280d9b8f8412fe245772f0ace2dabd0e8 cefac28d652e224f2c0ab8c536217eaac961f797 janik <76305@hs-aalen.de> 1701635053 +0100	checkout: moving from level-5-frontend-and-backend-integration to main
+cefac28d652e224f2c0ab8c536217eaac961f797 e0db64a8acfbddd018a0d8226ae32e3efe76d11d janik <76305@hs-aalen.de> 1701635057 +0100	pull --tags origin main: Fast-forward
+e0db64a8acfbddd018a0d8226ae32e3efe76d11d 75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 janik <76305@hs-aalen.de> 1701713120 +0100	commit: BugFix: Frontend: IP2 Backend changed
+75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 04ffd6d280d9b8f8412fe245772f0ace2dabd0e8 janik <76305@hs-aalen.de> 1702846218 +0100	checkout: moving from main to level-5-frontend-and-backend-integration
+04ffd6d280d9b8f8412fe245772f0ace2dabd0e8 75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 janik <76305@hs-aalen.de> 1702846318 +0100	checkout: moving from level-5-frontend-and-backend-integration to main
+75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 04ffd6d280d9b8f8412fe245772f0ace2dabd0e8 janik <76305@hs-aalen.de> 1702846467 +0100	checkout: moving from main to level-5-frontend-and-backend-integration
+04ffd6d280d9b8f8412fe245772f0ace2dabd0e8 75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 janik <76305@hs-aalen.de> 1702846579 +0100	checkout: moving from level-5-frontend-and-backend-integration to main
+75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 janik <76305@hs-aalen.de> 1702846594 +0100	checkout: moving from main to webcrawler
+75d23bd8e626e21fa9a3e54bf0a11fa4504a1ce2 422c5213e2a30ad0ac57e49a96a9668543409a3f janik <76305@hs-aalen.de> 1702848045 +0100	commit: feat: add request url
+422c5213e2a30ad0ac57e49a96a9668543409a3f 46e051d5e2c4d529ce12fd4adf3219852682b18c janik <76305@hs-aalen.de> 1702848828 +0100	commit: feat: extract meta data and week
+46e051d5e2c4d529ce12fd4adf3219852682b18c 9051f5f589fc0b6c97ee9d610f61117a72279070 janik <76305@hs-aalen.de> 1702849506 +0100	commit: feat: extract boxscore urls
+9051f5f589fc0b6c97ee9d610f61117a72279070 83bf66dc9bd4043dd0045ca0d0283fcae7e37f2a janik <76305@hs-aalen.de> 1702850920 +0100	commit: feat: transform to season boxscore links
+83bf66dc9bd4043dd0045ca0d0283fcae7e37f2a 6c4899b7a53bc54d6354652abc7df0eded76c956 janik <76305@hs-aalen.de> 1702851172 +0100	commit: feat: add json dump function
+6c4899b7a53bc54d6354652abc7df0eded76c956 3cba945fa131b5e9f117d8a5dc063bb89f8d39fc janik <76305@hs-aalen.de> 1702851197 +0100	commit: feat: add json with season boxscore links
+                                                                                                                                                        

@@ -1,0 +1,26 @@
+[core]
+	repositoryformatversion = 0
+	filemode = true
+	bare = false
+	logallrefupdates = true
+[remote "origin"]
+	url = git@github.com:BigDJanik/MyFirstApp.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[branch "main"]
+	remote = origin
+	merge = refs/heads/main
+[branch "5-level-3-algorithmus-implementieren"]
+	remote = origin
+	merge = refs/heads/5-level-3-algorithmus-implementieren
+[branch "6-level-4-entscheidungshilfe-bereitstellen"]
+	remote = origin
+	merge = refs/heads/6-level-4-entscheidungshilfe-bereitstellen
+[branch "level-3-api_integration"]
+	remote = origin
+	merge = refs/heads/level-3-api_integration
+[branch "level-4-front-and-backend"]
+	remote = origin
+	merge = refs/heads/level-4-front-and-backend
+[branch "level-5-frontend-and-backend-integration"]
+	remote = origin
+	merge = refs/heads/level-5-frontend-and-backend-integration
